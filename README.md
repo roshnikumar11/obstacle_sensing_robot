@@ -1,17 +1,17 @@
 # Obstacle Sensing Robot
 An autonomous obstacle-avoiding robot built with Arduino Uno that can navigate unknown environments without collisions using ultrasonic sensors.
 
-# Project Overview
+### Project Overview
 This project demonstrates an autonomous robot capable of detecting and avoiding obstacles in real-time. The robot uses three ultrasonic distance sensors for enhanced accuracy in obstacle detection and makes autonomous navigation decisions without external control.
 
-# Features
+### Features
 - Autonomous Navigation: Operates without external control
 - Real-time Obstacle Detection: Uses three ultrasonic sensors for 360° coverage
 - Collision Avoidance: Automatically changes course when obstacles are detected
 - Threshold-based Detection: Configurable distance threshold for obstacle detection
 - Cost-effective Design: Uses readily available and inexpensive components
 
-# Components Used
+### Components Used
 
 | Component                       | Quantity | Purpose |
 |---------------------------------|----------|---------|
@@ -24,9 +24,9 @@ This project demonstrates an autonomous robot capable of detecting and avoiding 
 | Jumper Wires | Multiple | Connections |
 | Chassis | 1 | Robot frame |
 
-# Hardware Setup
+### Hardware Setup
 
-### Circuit Connections
+#### Circuit Connections
 
 **Arduino Uno Pins:**
 - Digital Pin 2: Ultrasonic Sensor 1 (Trig)
@@ -41,38 +41,21 @@ This project demonstrates an autonomous robot capable of detecting and avoiding 
 - 5V: Power supply for sensors
 - GND: Common ground
 
-# Software Requirements
+#### Software Requirements
 
 - Arduino IDE (version 1.8.0 or higher)
 - Servo library (included with Arduino IDE)
 
-# Project Structure
+### Getting Started
 
-obstacle-sensing-robot/
-├── src/
-│   └── obstacle_robot.ino          # Main Arduino code
-├── circuit/
-│   ├── circuit_diagram.png         # Circuit schematic
-│   └── block_diagram.png           # System block diagram
-├── docs/
-│   ├── project_report.pdf          # Complete project documentation
-│   └── flowchart.png              # Logic flowchart
-├── images/
-│   └── robot_photos/               # Photos of the assembled robot
-├── README.md                       # This file
-└── LICENSE                         # License file
-
-
-# Getting Started
-
-### 1. Hardware Assembly
+#### 1. Hardware Assembly
 1. Mount the Arduino Uno on the chassis
 2. Attach DC motors to the wheels
 3. Connect ultrasonic sensors at different positions for optimal coverage
 4. Mount the servo motor for sensor rotation (if using rotating sensor setup)
 5. Connect all components according to the circuit diagram
 
-### 2. Software Installation
+#### 2. Software Installation
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/obstacle-sensing-robot.git
@@ -83,12 +66,12 @@ obstacle-sensing-robot/
 4. Select the correct port (Tools > Port)
 5. Upload the code to your Arduino
 
-### 3. Operation
+#### 3. Operation
 1. Power on the robot using the battery pack
 2. Place the robot in an open area
 3. The robot will automatically start navigating and avoiding obstacles
 
-# How It Works
+### How It Works
 
 1. Sensor Reading: Three ultrasonic sensors continuously measure distances to surrounding objects
 2. Decision Making: Arduino processes sensor data and determines if obstacles are within the threshold distance
@@ -96,7 +79,7 @@ obstacle-sensing-robot/
 4. Movement Control: DC motors are controlled to execute the planned movement (forward, turn left, turn right, or reverse)
 5. Continuous Loop: The process repeats continuously for autonomous navigation
 
-# Configuration
+### Configuration
 
 You can modify the following parameters in the code:
 
@@ -105,7 +88,7 @@ You can modify the following parameters in the code:
 - `TURN_DELAY`: Duration of turning movements
 - `SCAN_DELAY`: Delay between sensor readings
 
-# Applications
+### Applications
 
 - Household Automation: Automatic vacuum cleaning robots
 - Industrial Surveillance: Monitoring in hazardous environments
@@ -113,7 +96,7 @@ You can modify the following parameters in the code:
 - Research & Education: Learning platform for robotics and automation
 - Entertainment: Autonomous toy vehicles
 
-# Contact
+### Contact
 
 For any questions or suggestions, please reach out or create an issue in this repository.
 
