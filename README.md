@@ -2,11 +2,11 @@
 An autonomous obstacle-avoiding robot built with Arduino Uno that can navigate unknown environments without collisions using ultrasonic sensors.
 
 ### Project Overview
-This project demonstrates an autonomous robot capable of detecting and avoiding obstacles in real-time. The robot uses three ultrasonic distance sensors for enhanced accuracy in obstacle detection and makes autonomous navigation decisions without external control.
+This project demonstrates an autonomous robot capable of detecting and avoiding obstacles in real-time. The robot uses a ultrasonic distance sensor with servo motor for rotation for enhanced accuracy in obstacle detection and makes autonomous navigation decisions without external control.
 
 ### Features
 - Autonomous Navigation: Operates without external control
-- Real-time Obstacle Detection: Uses three ultrasonic sensors for 360° coverage
+- Real-time Obstacle Detection: Uses ultrasonic sensor for 180° coverage
 - Collision Avoidance: Automatically changes course when obstacles are detected
 - Threshold-based Detection: Configurable distance threshold for obstacle detection
 - Cost-effective Design: Uses readily available and inexpensive components
@@ -16,8 +16,8 @@ This project demonstrates an autonomous robot capable of detecting and avoiding 
 | Component                       | Quantity | Purpose |
 |---------------------------------|----------|---------|
 | Arduino Uno Board               | 1 | Main microcontroller |
-| Ultrasonic Sensor (HC-SR04) | 3 | Distance measurement |
-| Servo Motor | 1 | Sensor rotation mechanism |
+| Ultrasonic Sensor (HC-SR04) | 1 | Distance measurement |
+| Servo Motor (SG90) | 1 | Sensor rotation mechanism |
 | DC Motors | 2 | Robot locomotion |
 | Wheels | 2 | Movement |
 | Battery Pack | 1 | Power supply |
@@ -29,12 +29,8 @@ This project demonstrates an autonomous robot capable of detecting and avoiding 
 #### Circuit Connections
 
 **Arduino Uno Pins:**
-- Digital Pin 2: Ultrasonic Sensor 1 (Trig)
-- Digital Pin 3: Ultrasonic Sensor 1 (Echo)
-- Digital Pin 4: Ultrasonic Sensor 2 (Trig)
-- Digital Pin 5: Ultrasonic Sensor 2 (Echo)
-- Digital Pin 6: Ultrasonic Sensor 3 (Trig)
-- Digital Pin 7: Ultrasonic Sensor 3 (Echo)
+- Digital Pin 2: Ultrasonic Sensor (Trig) 
+- Digital Pin 3: Ultrasonic Sensor (Echo)
 - Digital Pin 9: Servo Motor (Control)
 - Digital Pin 10: Left Motor (Direction)
 - Digital Pin 11: Right Motor (Direction)
@@ -51,8 +47,8 @@ This project demonstrates an autonomous robot capable of detecting and avoiding 
 #### 1. Hardware Assembly
 1. Mount the Arduino Uno on the chassis
 2. Attach DC motors to the wheels
-3. Connect ultrasonic sensors at different positions for optimal coverage
-4. Mount the servo motor for sensor rotation (if using rotating sensor setup)
+3. Connect ultrasonic sensor for optimal coverage
+4. Mount the servo motor for sensor rotation
 5. Connect all components according to the circuit diagram
 
 #### 2. Software Installation
