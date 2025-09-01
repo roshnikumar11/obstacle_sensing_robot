@@ -1,15 +1,15 @@
 # Obstacle Sensing Robot
-An autonomous obstacle-avoiding robot built with Arduino Uno that can navigate unknown environments without collisions using ultrasonic sensors.
+An autonomous obstacle-avoiding robot built with Arduino Uno that can navigate unknown environments without collisions using an ultrasonic sensor.
 
 ### Project Overview
-This project demonstrates an autonomous robot capable of detecting and avoiding obstacles in real-time. The robot uses a ultrasonic distance sensor with servo motor for rotation for enhanced accuracy in obstacle detection and makes autonomous navigation decisions without external control.
+This project demonstrates a moving robot capable of detecting and avoiding obstacles in real-time. The robot uses an ultrasonic distance sensor with servo motor for rotation so as to enhance accuracy in obstacle detection and makes navigation decisions without external control.
 
 ### Features
-- Autonomous Navigation: Operates without external control
-- Real-time Obstacle Detection: Uses ultrasonic sensor for 180° coverage
-- Collision Avoidance: Automatically changes course when obstacles are detected
-- Threshold-based Detection: Configurable distance threshold for obstacle detection
-- Cost-effective Design: Uses readily available and inexpensive components
+- Autonomous navigation: Operates without external control
+- Real-time obstacle detection: Uses ultrasonic sensor for 180° coverage
+- Collision avoidance: Automatically changes course when obstacles are detected
+- Threshold-based detection: Configurable distance threshold for obstacle detection(15-25 cm)
+- Cost-effective design: Uses readily available and inexpensive components
 
 ### Components Used
 
@@ -49,7 +49,7 @@ This project demonstrates an autonomous robot capable of detecting and avoiding 
 2. Attach DC motors to the wheels
 3. Connect ultrasonic sensor for optimal coverage
 4. Mount the servo motor for sensor rotation
-5. Connect all components according to the circuit diagram
+5. Connect all components
 
 #### 2. Software Installation
 1. Clone this repository:
@@ -69,7 +69,7 @@ This project demonstrates an autonomous robot capable of detecting and avoiding 
 
 ### How It Works
 
-1. Sensor Reading: Three ultrasonic sensors continuously measure distances to surrounding objects
+1. Sensor Reading: An ultrasonic sensor continuously measures distance to surrounding objects
 2. Decision Making: Arduino processes sensor data and determines if obstacles are within the threshold distance
 3. Path Planning: When an obstacle is detected, the robot calculates the best alternative direction
 4. Movement Control: DC motors are controlled to execute the planned movement (forward, turn left, turn right, or reverse)
