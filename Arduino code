@@ -9,11 +9,11 @@
 
 #include <Servo.h>
 
-// Pin definitions for ultrasonic sensor (only one now)
+// Pin definitions for ultrasonic sensor
 #define TRIG_PIN 2
 #define ECHO_PIN 3
 
-// Pin definitions for motors (using L298N/L293D)
+// Pin definitions for motors (using L298N)
 #define LEFT_MOTOR_PIN1 8
 #define LEFT_MOTOR_PIN2 9
 #define RIGHT_MOTOR_PIN1 10
@@ -27,7 +27,7 @@ Servo sensorServo;
 
 // Config
 const int THRESHOLD_DISTANCE = 20; // cm
-const int MOTOR_SPEED = 200;       // 0–255
+const int MOTOR_SPEED = 200;       // 0–255 RPM
 const int TURN_DELAY = 500;        // ms
 const int SCAN_DELAY = 200;        // ms (servo settle)
 
