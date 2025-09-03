@@ -27,9 +27,9 @@ Servo sensorServo;
 
 // Config
 const int THRESHOLD_DISTANCE = 20; // cm
-const int MOTOR_SPEED = 200;       // 0–255 RPM
+const int MOTOR_SPEED = 200;       //  PWM level 0–255 (≈78% duty)
 const int TURN_DELAY = 500;        // ms
-const int SCAN_DELAY = 200;        // ms (servo settle)
+const int SCAN_DELAY = 200;        // ms (Time for servo to settle)
 
 // Globals
 int frontDistance = 0;
@@ -56,7 +56,7 @@ void setup() {
   sensorServo.write(90); // Center
   delay(1000);
 
-  Serial.println("Robot Initialized with 1 Ultrasonic + Servo");
+  Serial.println("Robot Initialized with Ultrasonic + Servo");
 }
 
 void loop() {
